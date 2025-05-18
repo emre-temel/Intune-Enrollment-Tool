@@ -1,7 +1,7 @@
 @echo off
 chcp 65001 >nul
 
-:: Tarih ve saat bilgisi
+:: Date and Hour Information
 for /f "tokens=1-4 delims=/ " %%a in ('date /t') do (
     set gun=%%a
     set ay=%%b
@@ -22,6 +22,6 @@ gpresult /h "%klasor%\%dosyaadi%" /scope:computer
 start "" "%klasor%\%dosyaadi%"
 
 echo.
-echo Komut tamamlandi: %klasor%\%dosyaadi%
+echo Command successfully executed: %klasor%\%dosyaadi%
 pause
 exit
