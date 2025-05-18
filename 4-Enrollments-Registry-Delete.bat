@@ -1,7 +1,7 @@
 
 @echo off
 chcp 65001
-set /p choice="Kayıt defterindeki Enrollments silmek üzeresiniz. Silmek istediğnize emin misiniz ? (Y/N): "
+set /p choice="You are about to delete Enrollments from the registry. Are you sure you want to delete? (Y/N): "
 if /i "%choice%"=="Y" (
     REG DELETE "HKLM\SOFTWARE\Microsoft\Enrollments" /f
     echo.
