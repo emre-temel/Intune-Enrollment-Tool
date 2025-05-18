@@ -1,7 +1,7 @@
 
 @echo off
 chcp 65001
-set /p choice="Cihazı Leave yapmak istediğinize emin misiniz? (Y/N): "
+set /p choice="Are you sure you want to Leave the device from Enrollment? (Y/N): "
 if /i "%choice%"=="Y" (
     dsregcmd /leave
     echo.
