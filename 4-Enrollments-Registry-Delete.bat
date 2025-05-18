@@ -5,11 +5,11 @@ set /p choice="Kayıt defterindeki Enrollments silmek üzeresiniz. Silmek istedi
 if /i "%choice%"=="Y" (
     REG DELETE "HKLM\SOFTWARE\Microsoft\Enrollments" /f
     echo.
-    echo Komut tamamlandı. Devam etmek için bir tuşa basın...
+    echo Command successfully executed. Press any button to continue...
     pause
 ) else (
     echo.
-    echo İşlem iptal edildi. Devam etmek için bir tuşa basın...
+    echo Job cancelled. Press any button to continue...
     pause
 )
 exit
