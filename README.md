@@ -45,9 +45,11 @@ Below is a placeholder for the sample menu interface of the tool:
 > **Note:** The menu interface image is provided as an example. The actual interface is text-based and displayed in the PowerShell window.
 
 ## 🚀 Usage Instructions
-1. Run the PowerShell script with administrative privileges.
-2. Enter a menu option (1-6 or Q).
-3. The selected command will be executed, and the results will be displayed on the screen.
+1. Run the PowerShell
+2. Execute "Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass" 
+3. Enter the path of script where you dowload (for Example: CD c:\sciprt) and ".\Enrollment-Solution.ps1"
+4. Enter a menu option (1-6 or Q).
+5. The selected command will be executed, and the results will be displayed on the screen.
 
 ---
 
