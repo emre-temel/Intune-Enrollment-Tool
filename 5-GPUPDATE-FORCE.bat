@@ -3,6 +3,6 @@
 @echo off
 gpupdate /force
 echo.
-echo Komut tamamlandi.
+echo Command successfully executed.
 pause
 exit
