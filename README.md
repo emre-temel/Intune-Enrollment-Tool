@@ -38,7 +38,8 @@ This PowerShell-based tool provides a menu with several options to manage and tr
 ### 📷 Sample Menu Interface
 Below is a placeholder for the sample menu interface of the tool:
 
-![image](https://github.com/user-attachments/assets/c62e5205-ff4f-4f81-ba58-72d95b9db005)
+![image](https://github.com/user-attachments/assets/957de8d7-0b21-4009-85b5-b49e95c6006f)
+
 
 
 > **Note:** The menu interface image is provided as an example. The actual interface is text-based and displayed in the PowerShell window.
