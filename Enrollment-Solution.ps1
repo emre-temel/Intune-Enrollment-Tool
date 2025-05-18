@@ -15,13 +15,13 @@ if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 chcp 65001
 
 function Show-Menu {
-    Write-Host "1: GPRESULT ile rapor çıkart"
-    Write-Host "2: DSREGCMD /status ile Enrollment Status getir"
-    Write-Host "3: DSREGCMD /leave ile Enrollment kaldır"
-    Write-Host "4: Enrollment Registry kayıtlarını kaldır"
-    Write-Host "5: GPUPDATE /Force ile Group Policy al"
-    Write-Host "6: Auto Enrollment Task'ını çalıştır"
-    Write-Host "Q: Çıkış"
+    Write-Host "1: Get GPO HTML report"
+    Write-Host "2: Get status of Enrollment with DSREGCMD /status "
+    Write-Host "3: Unjoin Enrollment with DSREGCMD /leave"
+    Write-Host "4: Delete Enrollment Registry"
+    Write-Host "5: Execute GPUPDATE /Force"
+    Write-Host "6: Execute Auto Enrollment Task"
+    Write-Host "Q: Quit"
 }
 
 
@@ -33,13 +33,13 @@ function Run-Bat {
     if (Test-Path $fullPath) {
         Start-Process -FilePath "cmd.exe" -ArgumentList "/k `"$fullPath`"" 
     } else {
-        Write-Host "`nHATA: '$batFile' bulunamadı. Lütfen dosyanın script ile aynı klasörde olduğundan emin olun.`n" -ForegroundColor Red
+        Write-Host "`nHATA: '$batFile' couldn't find. Please be sure bat file in same script folder.`n" -ForegroundColor Red
     }
 }
 
 while ($true) {
     Show-Menu
-    $choice = Read-Host "Bir seçenek girin (1-6 veya Q)"
+    $choice = Read-Host "Chosee an option (1-6 veya Q)"
     
     switch ($choice) {
         "1" { Run-Bat -batFile "1-GPRESULT-HTML-REPORT.bat" }
@@ -49,6 +49,6 @@ while ($true) {
         "5" { Run-Bat -batFile "5-GPUPDATE-FORCE.bat" }
         "6" { Run-Bat -batFile "6-Auto-Enrollment-Task.bat" }
         "Q" { break }
-        default { Write-Host "Geçersiz seçenek, lütfen tekrar deneyin." }
+        default { Write-Host "Invalid option, please try again." }
     }
 }
