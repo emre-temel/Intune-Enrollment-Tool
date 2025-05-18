@@ -3,6 +3,6 @@
 chcp 65001
 dsregcmd /status
 echo.
-echo Komut tamamlandı. Devam etmek için bir tuşa basın...
+echo Command successfully executed. Press any button to continue...
 pause
 exit
