@@ -12,7 +12,7 @@ if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 }
 
 
-chcp 65001
+echo "Choose an option which perform would like to do ?"
 
 function Show-Menu {
     Write-Host "1: Get GPO HTML report"
