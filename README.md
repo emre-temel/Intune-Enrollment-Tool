@@ -46,8 +46,7 @@ Below is a placeholder for the sample menu interface of the tool:
 
 ## 🚀 Usage Instructions
 1. Run the PowerShell
-2. Execute "Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass" 
-3. Enter the path of script where you dowload (for Example: CD c:\sciprt) and ".\Enrollment-Solution.ps1"
+2. Execute "Tool.bat"
 4. Enter a menu option (1-6 or Q).
 5. The selected command will be executed, and the results will be displayed on the screen.
 
